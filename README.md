@@ -1,4 +1,4 @@
-# Calliope mini CO2 Sensor, based on Sensirion SCD40 Makecode Extension
+# Calliope mini CO2 Sensor library, based on Sensirion SCD40 Makecode Extension
 
 Makecode extension for the Calliope mini CO2 Sensor (Sensirion SCD40) connected to the Calliope mini platform.
 
