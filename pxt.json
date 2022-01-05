@@ -8,7 +8,9 @@
     },
     "files": [
         "README.md",
-        "SCD40.ts"
+        "SCD40.ts",
+        "_locales/de/SCD40-jsdoc-strings.json.json",
+        "_locales/de/SCD40-strings.json.json"
     ],
     "testFiles": [
         "test.ts"
