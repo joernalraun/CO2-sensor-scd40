@@ -1,0 +1,22 @@
+{
+    "name": "CO2 Sensor",
+    "version": "0.1.1",
+    "description": "Calliope mini CO2-Sensor",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "SCD40.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "supportedTargets": [
+        "microbit",
+        "calliope-mini"
+    ],
+    "preferredEditor": "tsprj"
+}
