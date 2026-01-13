@@ -4,5 +4,7 @@
 	"SCD40.GET_CO2|block": "CO2",
 	"SCD40.GET_TEMPERATURE|block": "Temperatur",
 	"SCD40.GET_RELATIVE_HUMIDITY|block": "Luftfeuchtigkeit",
+    "SCD40.startLowPowerPeriodicMeasurement|block": "Start der Messung mit geringer Leistung (30 s)",
+    "SCD40.stopPeriodicMeasurement|block": "Messung beenden",
 	"SCD40.PERFORM_FACTORY_RESET|block": "Sensor Zurücksetzen"
 }
