@@ -116,6 +116,37 @@ namespace SCD40 {
     }
 
     /**
+     *Starts the energy-saving measurement mode (Low Power).
+     * The measurement interval is approx. 30 seconds.
+     * Signal update: every 30 seconds.
+     */
+    //% block="start low power (approx. 30s)"
+    //% weight=90
+    export function startLowPowerPeriodicMeasurement() {
+        stopPeriodicMeasurement(); 
+        basic.pause(500);
+
+        // Befehl senden: 0x21AC
+        let buf = pins.createBuffer(2);
+        buf.setNumber(NumberFormat.UInt16BE, 0, 0x21ac);
+        pins.i2cWriteBuffer(0x62, buf, false);
+    }
+
+    /**
+     * Stops the current periodic measurement (whether low power or normal).
+     * The sensor enters idle mode (ready for configuration).
+     */
+    //% block="stop low power"
+    //% weight=85
+    export function stopPeriodicMeasurement() {
+        // Befehl senden: 0x3F86
+        let buf = pins.createBuffer(2);
+        buf.setNumber(NumberFormat.UInt16BE, 0, 0x3f86);
+        pins.i2cWriteBuffer(0x62, buf, false);
+        basic.pause(500);
+    }
+
+    /**
      * perform a factory reset
      */
     //% blockId="SCD40_PERFORM_FACTORY_RESET" block="factory reset"
