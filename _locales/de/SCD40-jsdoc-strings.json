@@ -4,5 +4,7 @@
 	"SCD40.GET_CO2": "Den gemessenen CO2 Wert (in ppm) ausgeben. Nicht häufiger als einmal pro fünf Sekunden abfragen, ansonten wird der zuletzt gemessene Wert dargestellt.",
 	"SCD40.GET_TEMPERATURE": "Die gemessenene Temperatur in Fahrenheit oder Celsius ausgeben. Nicht häufiger als einmal pro fünf Sekunden abfragen, ansonten wird der zuletzt gemessene Wert dargestellt.",
 	"SCD40.GET_RELATIVE_HUMIDITY": "Die gemessene Luftfeuchtigkeit (RH) ausgeben.",
+    "SCD40.startLowPowerPeriodicMeasurement": "Starts the low power periodic measurement mode. The measurement interval is approximately 30 seconds. Signal update: every 30s.",
+    "SCD40.stopPeriodicMeasurement": "Stops the current periodic measurement (whether low power or normal). The sensor returns to idle mode.",
 	"SCD40.GET_PERFORM_FACTORY_RESET": "Den Sensor in den Auslieferungszustand zurück setzen."
 }
